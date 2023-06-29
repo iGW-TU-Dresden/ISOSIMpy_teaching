@@ -13,9 +13,9 @@ import Post
 # Doc
 # Check markers
 
-pfile = r'in/precipitation.csv'
-pfile_2 = r'in/precipitation.csv'
-sfile = r'in/samples.csv'
+pfile = r'model_input/precipitation.csv'
+pfile_2 = r'model_input/precipitation.csv'
+sfile = r'model_input/samples.csv'
 date = 600
 
 show_gw_age = [5, 10, 20, 40, 80]
