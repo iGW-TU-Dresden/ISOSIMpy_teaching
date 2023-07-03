@@ -37,8 +37,18 @@ class Post():
         ax1.grid()
         ax2.grid()
 
-    def tracerTracer(result_tt, rain, rain_2, date, show_gw_age, TTs, tracer_name, tracer2_name, savefigs=True):
-        """Visualize the result of the tracer tracer calculations."""
+    def tracerTracer(result_tt, rain, rain_2, date, show_gw_age, TTs, tracer_name="MyTracer1", tracer2_name="MyTracer2", obs=None, savefigs=True):
+        """
+        Visualize the result of the tracer tracer calculations.
+        
+        Parameters
+        ----------
+        obs :: tracer concentration observations in the aquifer / well. a 2D numpy array
+            where each column holds concentrations of a single tracer and each row
+            holds exactly two concentration measurements (one for each tracer), column 1
+            represents the first tracer and column two represents the second tracer; numpy
+            ndarray
+        """
         result_tt = np.transpose(result_tt, axes=[2, 1, 0])
 
         fig = plt.figure(figsize=(8, 8), constrained_layout=True)
@@ -50,10 +60,15 @@ class Post():
         # ax1 = fig.add_subplot(3, 1, 1)
         # ax2 = fig.add_subplot(3, 1, 2)
 
-        ax1.plot(rain['Date'], rain[3], label='Input Tracer 1')
-        ax1.plot(rain_2['Date'], rain_2[3], ls="--", label='Input Tracer 2')
+        ax1.plot(rain['Date'], rain[3], label='Input %s' % tracer_name)
+        ax1.plot(rain_2['Date'], rain_2[3], ls="--", label='Input %s' % tracer2_name)
         ax2.plot(result_tt[date, :, 0], result_tt[date, :, 1])
         ax2.scatter(result_tt[date, :, 0], result_tt[date, :, 1])
+
+        # check wheather observations are given
+        if obs is not None:
+            # if observations are given, scatter points in the harp plot
+            ax2.scatter(obs[:, 0], obs[:, 1], marker="x", c="red", s=40, label="Observations")
 
         ax1.set_ylabel('$c_{Tracers}$', fontsize=14)
         ax1.set_title("Tracer Input", fontsize=16)
