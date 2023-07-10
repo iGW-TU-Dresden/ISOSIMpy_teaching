@@ -18,7 +18,7 @@ If you have any questions, write an email to max_gustav.rudolph@tu-dresden.de
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/iGW-TU-Dresden/ISOSIMpy/main)
 
-A Binder is available in which you can run the example notebooks remotely. With that, you do not need to install a Python distribution but you are also limited in functionality and adaptability (you cannot adapt the notebooks manually).
+A Binder is available in which you can run the example notebooks remotely. With that, you do not need to install a Python distribution but you are also limited in functionality and adaptability.
 
 # Installing and Using the Package
 
