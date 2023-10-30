@@ -1,5 +1,7 @@
 generate_data.ipynb
 model_input/atm_tracers.csv
 model_input/atm_tracers_2.csv
+__pycache__/*
+.ipynb_checkpoints/*
 __pycache__/
 .ipynb_checkpoints/
