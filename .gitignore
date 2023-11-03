@@ -5,3 +5,10 @@ __pycache__/*
 .ipynb_checkpoints/*
 __pycache__/
 .ipynb_checkpoints/
+model_input/groundwater_samples/GW_samples_3H_old
+model_input/groundwater_samples/GW_samples_3H_old_2
+model_input/precipitation/precipitation_3H_old
+model_input/precipitation/precipitation_3H_old_2
+model_input/precipitation/precipitation_Tracer2
+model_input/atm_tracers
+model_input/atm_tracers_2
