@@ -124,6 +124,8 @@ class Post():
         if savefigs:
             plt.savefig("Tracer_Input_and_Tracer_Tracer_Graph.png", dpi=400, bbox_inches="tight")
 
+        return fig
+
     def triHe1(result_tt, rain, date, show_gw_age, TTs):
         """Visualize the result of the tritium helium calculations."""
         fig = plt.figure(figsize=(10, 20), constrained_layout=True)
