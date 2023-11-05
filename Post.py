@@ -71,7 +71,7 @@ class Post():
             ax2.scatter(obs[:, 0], obs[:, 1], marker="x", c="red", s=40, label="Observations")
 
         ax1.set_ylabel('$c_{Tracers}$', fontsize=14)
-        ax1.set_title("Tracer Input", fontsize=16)
+        ax1.set_title("Tracer Input (Unweighted)", fontsize=16)
         ax1.set_xlabel("Time", fontsize=14)
         ax1.set_ylim(0)
 

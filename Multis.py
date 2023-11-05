@@ -53,7 +53,7 @@ class Multis():
             if int(TT_round) <= n:
                 f[int(TT_round)-1] = 1
             else:
-                print('An error occured. TT > sim per')
+                print('An error occurred: the (Mean) Travel Time is set higher than the length of the simulatio period.')
 
         elif par.MODNUM == 2:  # Exponential Model
             if printing:
