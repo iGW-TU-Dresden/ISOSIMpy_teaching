@@ -1,4 +1,4 @@
-# ISOMSIMpy
+# ISOMSIMpy - Teaching
 
 ISOSIMpy (c) by the ISOSIMpy Team is a package for the application of lumped parameter models (LPM) to simulate groundwater age dynamics on the basis of tracer and isotope measurements. This package is primarily used for teaching and a first introduction to the field of LPM mdoelling in isotope groundwater hydrology. For applications in research, please contact the development team (see below).
 
